@@ -9,6 +9,7 @@ import {
   Redirect
 } from 'react-router-dom'
 import { Editor } from './pages/editor'
+import { History } from './pages/history' 
 
 const Header = styled.h1`
 color: red;
@@ -28,7 +29,7 @@ const Main = (
         <Editor />
       </Route>
       <Route exact path="/history">
-        <h1>History</h1>
+        <History />
       </Route>
       <Redirect to="/editor" path="*" />
     </Router>
